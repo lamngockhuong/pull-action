@@ -1,5 +1,5 @@
 # Common build stage
-FROM node:16.13-alpine as common-build-stage
+FROM node:16.20-alpine as common-build-stage
 USER node
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 WORKDIR /home/node/app
